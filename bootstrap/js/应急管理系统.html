@@ -1,0 +1,77 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<title>应急管理系统</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div>
+   <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+	   <div class="container">
+        <div class="row">
+           <div class="col-md-3">
+                <img  id="logo" src="images/logo.png">
+           </div>
+            <div class="col-md-4">
+                <ul class="nav navbar-nav" id="daohang">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">查询</a></li>
+                <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               案例<b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+               <li><a href="#">案例1</a></li>
+               <li class="divider"></li>
+               <li><a href="#">案例2</a></li>
+               <li class="divider"></li>
+               <li><a href="#">案例3</a></li>
+            </ul>
+         </li>
+                <li><a href="#">留言板</a></li>
+            </ul>
+            </div>
+            <div class="col-md-2 col-md-offset-3" id="zhuce">
+              <ul class="nav navbar-nav pull-ringt">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+            </ul>
+            </div>
+            </div>
+        </div>
+	</nav>
+</div>
+<div class="row">
+    <div class="panel panel-default col-md-4">
+        <div class="panel-heading">
+            <h2 class="panel-title">
+                <p> 兰州西固区介绍</p>      
+            </h2>
+        </div>
+       <div class="panel-body">
+         <p class="ptext">西兰州西固区是国家"一五"期间重点投资兴建的石化工业基地，也是兰州市区的"西大门"，区辖7乡1镇、8个街道办事处，总人口33.6万，总面积385平方公里。区内有中央、省、市属大中型企业30多家，已形成石油、化工、机械、冶金等支柱产业为主体的门类比较齐全的工业体系，具有工业基础雄厚、可深度加工原料丰富、科技人才密集、自然资源开发潜力较大等四个方面的比较优势，被誉为"镶嵌在西北高原上的石化明珠"。 随着我国加入世贸组织、西部大开发战略的深入实施、国家支持老工业基地改造和驻区"两兰"分立重组，西固区迎来了前所未有的历史发展机遇，区委，区政府从发生深刻变化的区情出发，解放思想，与时俱进，坚持"抓住经济建设中心，突出加快发展主题的工作格局、确立了"突出工业、提高农业、大力发展第三产业"的经济发展思路，坚持加大依托、服务、联合力度，加快对外开放步伐和"两条腿"走路的发展方针，为实现"工业兴、农业特、商贸活、财源多、社会稳、人气旺、城市靓、环境美"的现代化新西固的奋斗目标，明确了主攻方向。 思路就是出路。
+         </p>
+      </div>
+    </div> 
+   <div class="panel panel-default col-md-5" id="container">
+   <div class="panel-heading">
+   <script src="https://webapi.amap.com/maps?v=1.4.12&key=0733c38da7edda273912812aff61b731"></script>
+       <script>
+        var map = new AMap.Map('container', {
+            resizeEnable: true, //是否监控地图容器尺寸变化
+            zoom:13, //初始化地图层级
+            center: [103.640909,36.088059] //初始化地图中心点
+        };
+      </script>
+   </div>
+   </div>
+   </div>
+</body>
+</html>
